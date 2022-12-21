@@ -1,0 +1,130 @@
+body{
+  background-color: rgb(235, 234, 234);
+}
+
+.header {
+    background-color:#333333;
+  }
+  
+  .container {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+   
+  }
+
+.nav {
+    margin: 0;
+    padding: 20px 0;
+    color: blue     ;
+  }
+  
+  .nav li {
+    display:inline;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform:uppercase;
+    margin-left:10px;
+    margin-right:10px;
+  }
+  .nav li a{
+    text-decoration: none;
+    color:aliceblue
+  }
+  .h1{
+    padding: 50px;
+    font-style: oblique;
+    text-align: center;
+    color: blue;
+  }
+
+  p {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.1em;
+    line-height: 1.5em;
+    color: #666;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    margin: 5px 0 50px;
+  }
+  
+  a.more {
+    text-decoration: none;
+    font-size: .7em;
+    float: right;
+    display: block;
+    padding: 50px 20px;
+    color: #333;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color: #01c59f;
+  }
+  
+  .main1 {
+  margin-left: 25%;
+    display: flex;
+    margin-top: -50%;
+   
+ 
+   
+   
+  }
+  .sports{
+    width: 100%;
+  }
+  h3{
+    text-align: justify;
+    color:darkmagenta;
+  }
+  
+  .he1{
+    padding: 30px;
+  }
+  
+  .he2{
+      padding: 30px;
+    }
+    .div2{
+      width: 20%;
+    }
+  
+
+
+  @media (max-width: 500px) {
+    .main h1 {
+      font-size: 50px;
+      padding: 0 40px;
+    }
+  
+    .supporting .col {
+      width: 100%;
+    }
+  }
+  @media (max-width: 500px) {
+    main{
+      width: 40%;
+    }
+  }
+
+  .aside1 ul li {
+    list-style:none;
+    text-decoration: none;
+  }
+  footer{
+    margin-top: 20%;
+    clear: both;
+    border-top: 2px solid black;
+    text-align: center;
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    margin-bottom: 20px;
+    
+    
+    } 

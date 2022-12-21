@@ -1,0 +1,312 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+   
+  }
+  body{
+    width: 99%;
+  }
+  
+  .header {
+    background-color:#333333;
+  }
+  
+  .container {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+  
+  .jumbotron {
+    background: url(https://www.audi.in/content/dam/nemo/in/models/q3/xxxxxxx_Audi.in%20Q3_1920X1920.jpg?imwidth=1920);
+    background-size:cover;
+    background-position:center center;
+    background-repeat:no-repeat;
+    height: 800px;
+  }
+  
+  .nav {
+    margin: 0;
+    padding: 20px 0;
+  }
+  
+  .nav li {
+    display:inline;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform:uppercase;
+    margin-left:10px;
+    margin-right:10px;
+  }
+  .nav li a{
+    text-decoration: none;
+    color:aliceblue
+  }
+  .main {
+    position: relative;
+    top: 180px;
+    text-align: center;
+  }
+  
+  .main h1 {
+    color: #333;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 70px;
+    margin-top: 0;
+    margin-bottom: 80px;
+    text-transform: uppercase;
+  }
+  
+  .btn-main {
+    background-color: #333;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 1.3px;
+    padding: 16px 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  
+  .btn-default {
+    color:#333;
+    border:1px solid #333333;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 10px;
+    letter-spacing: 1.3px;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-transform: uppercase;  
+    display: inline-block;
+    margin-bottom: 20px; 
+    padding-right:50px;
+    padding-left:50px;
+  }
+  
+  .supporting {
+    padding-top: 80px;
+    padding-bottom: 100px;
+  }
+  
+  .supporting .col {
+    float: left;
+    width: 33%;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+  }
+  
+  .supporting img {
+    height: 32px;
+  }
+  
+  .supporting h2 {
+    font-weight: 600;
+    font-size: 23px;
+    text-transform: uppercase;
+  }
+  
+  .supporting p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 0 50px;
+    margin-bottom: 40px;
+  }
+  
+  .models{
+    text-align: center;
+    color: crimson;
+  }
+ 
+  
+ @media(max-width:500px){
+  body{
+    width:80%;
+  }
+ }
+  
+  @media (max-width: 500px) {
+    .main h1 {
+      font-size: 50px;
+      padding: 0 40px;
+    }
+  
+    .supporting .col {
+      width: 100%;
+    }
+  }
+
+  /* start model */
+  /* start project */
+ 
+   .slider {
+   
+       display: flex;
+       height: 250px;
+       max-height: auto;
+       overflow-y: hidden;
+       overflow-x: scroll !important;
+       padding: 16px;
+      
+       scroll-behavior: smooth;
+  }
+   .slider::-webkit-scrollbar {
+       height: 5px;
+       width: 150px;
+       display: none;
+  }
+   .slider::-webkit-scrollbar-track {
+       background: transparent;
+  }
+   .slider::-webkit-scrollbar-thumb {
+       background: #888;
+  }
+   .slider::-webkit-scrollbar-thumb:hover {
+       background: #555;
+  }
+   .slider img:hover {
+       transform: scale(1.05);
+       box-shadow: 10px 10px 10px rgba(0,0,0,0.15);
+  }
+  h4 a{
+    color:black;
+  }
+   .slide {
+   text-align: center;
+       position: relative;
+  }
+  
+   .slide img {
+       height: 40%;
+       width: 350px;
+       margin: 0 10px;
+       object-fit: cover;
+       border-radius: 15px;
+       cursor: pointer;
+       transition: .25s ease-in-out;
+  }
+   .control-prev-btn {
+       position: absolute;
+       top: 50%;
+       left: 0;
+       background-color: rgba(255,255,255,0.55);
+       height: 100px;
+       line-height: 100px;
+       width: 45px;
+       text-align: center;
+       box-shadow: 0 1px 3px #888;
+       user-select: none;
+       color: #444;
+       cursor: pointer;
+  }
+   .control-next-btn {
+       position: absolute;
+       top: 50%;
+       right: 0;
+       background-color: rgba(255,255,255,0.55);
+       height: 100px;
+       line-height: 100px;
+       width: 45px;
+       text-align: center;
+       box-shadow: 0 1px 3px #888;
+       user-select: none;
+       color: #444;
+       cursor: pointer;
+  }
+ .slide,.head4{
+    text-align: center;
+ }
+  .slide img.zoomed{
+        width: 500px;
+      height: 600px;
+      position: fixed;
+      left: 25%;
+      top: 0%;
+      z-index: 1000;
+          transform: scale(1) translatey(0) !important; 
+  }
+  .overlay{
+          position: absolute;
+      height: 100%;
+      width: 100%;
+      background: rgba(0,0,0,.45);
+      top: 0;
+          display: none;
+  }
+  .overlay.active{
+      display: block;
+  }
+   @media only screen and (max-width: 420px) {
+       .slider {
+           padding: 0;
+      }
+       .slide {
+           padding: 16px 10px;
+      }
+       .slide img {
+           margin: 0;
+      }
+       .control-prev-btn {
+           top: 37%;
+      }
+       .control-next-btn {
+           top: 37%;
+      }
+  }
+  /* End model */
+
+  /* two column */
+  .two_column{
+    width: 80%;
+    float: left;
+  }
+ .two_column,.imgs{
+ margin-left: 5%;
+ 
+ }
+ .two_column h1{
+    text-align: center;
+    color:red;
+    
+ }
+ .aside1 p{
+    margin-left: 35%;
+    margin-top: -30%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    padding: 20px;
+    text-align:justify;
+    
+    
+ }
+ .contair ul li{
+ 
+    list-style:none;
+  }
+ 
+ .contair{
+ float: right;
+ width: 20%;
+  text-align: justify;
+  margin-right: -80px;
+  margin-top: 8%;
+  list-style:none;
+ }
+  /* footer */
+  footer{
+    margin-top: 20%;
+    clear: both;
+    border-top: 2px solid black;
+    text-align: center;
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    margin-bottom: 20px;
+    
+    
+    } 
